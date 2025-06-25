@@ -1,3 +1,24 @@
 body {
-  background-color: lightgray;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section.about-me {
+  background-color: rgb(50, 42, 75);
+}
+
+footer {
+  background-color: rgb(50, 42, 75);
+  color: white;
 }
