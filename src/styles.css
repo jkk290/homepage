@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(50, 42, 75);
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ body {
 }
 
 main {
+  flex-grow: 1;
   background-color: rgb(50, 42, 75);
 }
 
