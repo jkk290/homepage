@@ -1,7 +1,21 @@
 body {
-  background-color: white;
+  background-color: rgb(50, 42, 75);
   margin: 0;
   padding: 0;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile h1 {
+  display: absolute;
+  color: white;
+  margin: 0;
+}
+
+main {
+  background-color: rgb(50, 42, 75);
 }
 
 .icons {
@@ -15,7 +29,15 @@ a {
 }
 
 section.about-me {
-  background-color: rgb(50, 42, 75);
+  margin: 50px;
+  display: flex;
+  background-color: white;
+}
+
+section.projects {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
 }
 
 footer {
