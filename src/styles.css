@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   background-color: rgb(50, 42, 75);
   margin: 0;
@@ -12,18 +16,22 @@ body {
 }
 
 .profile h1 {
-  display: absolute;
+  position: absolute;
+  bottom: 0;
   color: white;
   margin: 0;
+  padding-left: 20px;
+  font-size: 7rem;
 }
 
 main {
+  flex-grow: 1;
   background-color: rgb(50, 42, 75);
 }
 
 .icons {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 a {
@@ -33,9 +41,32 @@ a {
 
 section.about-me {
   margin: 50px;
+  margin-bottom: 0;
   display: flex;
+  flex-direction: column;
   background-color: white;
+  max-width: 600px;
+  text-align: center;
 }
+
+section.about-me h2 {
+  font-size: 4rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+section.about-me p {
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+  color: grey;
+}
+
+section.about-me .icons {
+  margin-bottom: 20px;
+}
+
+
 
 section.projects {
   display: flex;
