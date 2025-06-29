@@ -3,12 +3,36 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(50, 42, 75);
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.icons {
+  width: 36px;
+  height: 36px;
+}
+
+main {
+position: relative;
+}
+
+.clipped-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(44, 39, 74);
+  clip-path: polygon(0 0, 100% 0%, 100% 5%, 0 13%);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile {
@@ -17,64 +41,127 @@ body {
 
 .profile h1 {
   position: absolute;
+  left: 10px;
   bottom: 0;
   color: white;
+  text-shadow: 1px 1px 5px black;
+  font-size: 4rem;
   margin: 0;
-  padding-left: 20px;
-  font-size: 7rem;
 }
 
-main {
-  flex-grow: 1;
-  background-color: rgb(50, 42, 75);
+.profile img {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
-.icons {
-  width: 36px;
-  height: 36px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-section.about-me {
-  margin: 50px;
+.about-me h2 {
+  font-size: 3rem;
   margin-bottom: 0;
+}
+
+.about-me p {
+  color: gray;
+  font-size: 2rem;
+  margin: 25px;
+  padding: 5px;
+}
+
+ .projects {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 100px;
   background-color: white;
-  max-width: 600px;
+ }
+
+ .projects h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+ }
+
+ .projects article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+ }
+
+ .projects article div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .project-header h3 {
+  margin: 20px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  vertical-align: text-bottom;
+ }
+
+ .project-header a {
+  margin: 20px;
+  margin-bottom: 0;  
+ }
+
+ .projects article p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 10px;
+  color: grey
+ }
+
+ footer {
+  background-color: rgb(44, 39, 74);
+ }
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: white;
+  padding: 50px;
+}
+
+.contact-me h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.contact-msg {
+  font-size: 1.25rem;
+}
+
+.address {
+  margin: 0;
+}
+
+.email {
   text-align: center;
 }
 
-section.about-me h2 {
-  font-size: 4rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
+.github-link {
+  align-self: center;
+
 }
 
-section.about-me p {
-  padding: 20px;
-  padding-bottom: 0;
-  font-size: 1.25rem;
-  color: grey;
+.contact-image img{
+  max-width: 100vw;
+  margin: 0;
+  text-align: center;
 }
 
-section.about-me .icons {
-  margin-bottom: 20px;
+.phoneNum a ,
+.email a{
+  text-decoration: none;
 }
 
-
-
-section.projects {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-}
-
-footer {
-  background-color: rgb(50, 42, 75);
+.phoneNum a:visited,
+.phoneNum a:link,
+.email a:visited,
+.email a:link {
   color: white;
 }
